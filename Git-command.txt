@@ -1,6 +1,7 @@
 git pull
 git status 
-git add .
+git add .   (For add new file and modified files)
+git add -A  (For Add new folder)
 git status
 git commit -m "message"
 git push
