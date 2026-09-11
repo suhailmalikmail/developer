@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS BOX MODEL</title>
+    <style>
+        *{
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        .container {
+            background-color: palevioletred;
+            border: 6px solid blue;
+
+            /* We can set padding for , bottom ,and left and right like this */
+            /* padding-top: 35px;
+            padding-bottom: 35px;
+            padding-left: 35px;
+            padding-right:23px;
+
+            /* margin-top: 3px; */
+            /* margin-bottom: 5;
+            margin-left: 23;
+            margin-right: 34; */
+
+            /* margin = top right bottom left;
+            padding = top right bottom left;
+
+            padding: 23px 19px 56px 78px;
+            margin:23px 19px 56px 78px;
+             */
+
+             /* padding: y(top/bottom) x(left/right);
+            margin: y(top/bottom) x(left/right); */
+
+            padding: 50px 20px;
+
+            margin: 50px 100px;
+            border-radius: 30px;
+            width: 600px;
+            height: 200px;
+        
+        }
+
+        body{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, saepe molestiae magni, modi
+            distinctio harum voluptatum eos nesciunt reiciendis eveniet adipisci corrupti asperiores? Aliquid velit est
+            fugit voluptates omnis facere?</p>
+
+    </div>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="Second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, saepe molestiae magni, modi
+            distinctio harum voluptatum eos nesciunt reiciendis eveniet adipisci corrupti asperiores? Aliquid velit est
+            fugit voluptates omnis facere?</p>
+
+    </div>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="Third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, saepe molestiae magni, modi
+            distinctio harum voluptatum eos nesciunt reiciendis eveniet adipisci corrupti asperiores? Aliquid velit est
+            fugit voluptates omnis facere?</p>
+
+    </div>
+</body>
+
+</html>
