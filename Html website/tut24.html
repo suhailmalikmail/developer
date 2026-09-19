@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+    <style>
+        .container{
+            border: 4px solid brown;
+            height: 1200px;
+        }
+
+          /* Css position:static (default),relative,absolute,fixed,sticky  */
+
+        .box{
+           border: 3px solid blue; 
+           width: 150px;
+           height: 150px;
+           margin: 6px;
+           display: inline-block;
+           background-color: chartreuse;
+        }
+        #box3{
+            /* relative:position the element relative to its normal position and well leava a gap at its normal position */
+            /* position: relative; */
+
+              /* absolute:position the element relative to tha position  of its first parent */
+            /* position: absolute; */
+            /* top: 40px;
+            left:100px; */
+
+            /* fixed:position the element relative to the browser window */
+            /* position: fixed;
+            right: 4px;
+            bottom: 4px; */
+
+            /* sticky */
+            position: sticky;
+            top: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+</html>
