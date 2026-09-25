@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suahil fitness project </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* css reset */
+        body {
+            font-family: Lato, sans-serif;
+            margin-left: 0px;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url("css/pexels-luisbecerrafotografo-5906260.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 1500px;
+        }
+
+        .left {
+            /* margin:18px;  */
+            position: absolute;
+            margin-bottom: 10px;
+            left: 50px;
+            top: 10px;
+            display: inline-block;
+            /* border: 2px solid blue; */
+            color: white;
+            align-items: center;
+        }
+
+        .left img {
+            width: 200px;
+            /* filter: invert(100%); */
+
+        }
+
+        .left div {
+            line-height: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 600px;
+            margin: 18px auto;
+            /* border: 4px solid red; */
+        }
+
+        .right {
+            /* margin:18px;  */
+            position: absolute;
+            right: 35px;
+            top: 18px;
+            display: inline-block;
+            /* border: 4px solid yellow; */
+
+        }
+
+        .btn {
+            margin: 0px 10px;
+            background-color: blanchedalmond;
+            padding: 4px 12px;
+            /* border: 3px solid blue; */
+            font-size: 15px;
+            border-radius: 18px;
+            cursor: pointer;
+            font-family: Lato, sans-serif;
+        }
+
+        .btn:hover {
+            background-color: blueviolet;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 10px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        .container {
+            /* border: 3px solid white; */
+            margin: 110px 30px;
+            padding: 10px 10px;
+            border-radius: 25px;
+            color: white;
+            width: 300px;
+        }
+
+        .from-group input {
+            text-align: center;
+            display: block;
+            width: 200px;
+            padding: 3px;
+            /* border: 3px solid white; */
+            margin: 4px auto;
+            border-radius: 30px;
+            font-size: medium;
+            font-family: Lato, sans-serif;
+
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            margin: 10px auto;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="css/pexels-marta-nogueira-589022975-17092539.jpg" alt="">
+            <div>suhail fitness</div>
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">concat us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">call up Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the bast gym of Delhi now </h1>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Gander">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Locality ">
+            </div>
+            <button class="btn">submit </button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
