@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            color: rgb(174, 0, 23);
+            /* font-weight: bold; */
+        }
+      /* if p is contained by any li which is contained by div */
+        /* div li p {
+            background-color: black;
+            color: beige;
+            /* font-weight: bold; */
+        /* } */
+      
+        /* if p is right inside div then this css will be applied */
+        /* div > p {
+            background-color: black;
+            color: beige;
+            /* font-weight: bold; */
+        /* } */
+
+/*     if p is right after div li .e p is the next sibling of div 
+        div + p{
+            background-color: chartreuse;
+            color: black;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This is on Selectors</h1>
+    <div class="row">
+        <ul>
+            <li class="item">
+                <p>This is a inside paragarph</p>
+            </li>
+
+        </ul>
+        <p>This is a paragarph</p>
+    </div>
+    <div>
+        <p>This is a another paragarph</p>
+    </div>
+    <p>this is outermost paragarph</p>
+</body>
+
+</html>
