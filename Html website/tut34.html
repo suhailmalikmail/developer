@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 19px 24px;
+            /* border: 4px solid red; */
+            margin: 7px 17px;
+            background-color: aqua;
+            /* box-shadow: 23px 30px palevioletred; */
+            /* box-shadow: -23px -30px palevioletred; */
+          /* box-shadow: 7px 5px 25px blueviolet; */
+          /* box-shadow: -7px -5px 25px blueviolet; */
+          /* box-shadow: -7px -5px 25px 30px blueviolet; */
+          /* box-shadow: inset 5px 10px; */
+          box-shadow: 10px 20px gold, 25px  40px blue;
+
+        }
+        .card h2{
+            /* text-shadow: 3px 5px red; */
+            text-shadow: -3px -5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is a computer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quod ipsam itaque praesentium culpa ut
+                eveniet ratione quia nemo impedit facere soluta, inventore cupiditate dicta id. Consequatur provident
+                voluptatibus quis!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is a html course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, aliquid, porro repellendus fugit aperiam
+                non totam dolorem error iusto laborum voluptas provident iste officiis nesciunt molestiae labore quis ad
+                blanditiis?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is a java course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, officiis est neque obcaecati, fuga amet
+                laboriosam inventore consequuntur, facilis suscipit voluptatum unde? Recusandae quaerat aliquid quos
+                voluptatibus eveniet earum nam!</p>
+        </div>
+    </div>
+</body>
+
+</html>
