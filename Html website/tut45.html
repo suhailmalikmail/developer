@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: aqua;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+
+        }
+
+        .bdr {
+            border: 3px solid red;
+            padding: 10px 23px;
+            background-color: aqua;
+        }
+
+        navbar {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>about</span>
+            <span>Services</span>
+            <span>contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn css in grid</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto perspiciatis ut quod aliquam
+                voluptatibus rem non, perferendis eum nam natus officia, quae asperiores unde id aperiam impedit placeat
+                a expedita soluta blanditiis quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae
+                optio, culpa aperiam voluptates consequuntur fugit dolorum qui perferendis, pariatur id numquam eaque.
+                Hic iure voluptate quisquam. Aspernatur obcaecati alias debitis voluptate facilis ducimus deserunt
+                dolores. Ab, repellat illum, perferendis pariatur omnis tempora laborum consectetur totam sint porro,
+                enim optio quo mollitia dicta accusantium possimus nesciunt? Autem recusandae iusto beatae dolorum
+                excepturi cumque natus. Culpa nobis quos quibusdam qui a? Quo necessitatibus fugiat dolore aspernatur
+                accusantium laudantium dignissimos magnam dolor cupiditate nesciunt nam rerum, autem atque!
+                Necessitatibus, alias tenetur sapiente maiores ea reprehenderit at doloribus neque totam dignissimos
+                labore dolor assumenda voluptas eligendi similique, hic, iusto autem officia laboriosam dolorum ab!
+                Possimus provident velit, error voluptatum quam neque, libero qui illum repellat voluptas perferendis
+                magnam minus expedita rerum repellendus dolorem consequatur sed, earum a vitae aperiam cupiditate! Illo
+                et reprehenderit, optio voluptate harum temporibus accusamus doloribus a, assumenda ab magni.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright codewithHary</footer>
+</body>
+
+</html>
